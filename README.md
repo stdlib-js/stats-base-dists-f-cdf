@@ -72,7 +72,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.cdf;
+})();
 })();
 </script>
 ```
@@ -163,6 +165,7 @@ y = mycdf( 8.0 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var d1;
 var d2;
@@ -178,6 +181,7 @@ for ( i = 0; i < 10; i++ ) {
     console.log( 'x: %d, d1: %d, d2: %d, F(x;d1,d2): %d', x.toFixed( 4 ), d1.toFixed( 4 ), d2.toFixed( 4 ), y.toFixed( 4 ) );
 }
 
+})();
 })();
 </script>
 </body>
@@ -269,7 +273,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [f-distribution]: https://en.wikipedia.org/wiki/F_distribution
 
-[@stdlib/math/base/special/betainc]: https://github.com/stdlib-js/math-base-special-betainc/tree/umd
+[@stdlib/math/base/special/betainc]: https://github.com/stdlib-js/math-base-special-betainc/tree/umd/tree/umd
 
 </section>
 
