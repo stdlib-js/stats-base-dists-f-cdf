@@ -65,13 +65,18 @@ where `d1` is the numerator degrees of freedom, `d2` is the denominator degrees 
 ## Usage
 
 ```javascript
+import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-f-cdf/tags). For example,
+
+```javascript
 import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@v0.1.0-deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@deno/mod.js';
 ```
 
 #### cdf( x, d1, d2 )
@@ -154,7 +159,7 @@ y = mycdf( 8.0 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@v0.1.0-deno/mod.js';
+import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@deno/mod.js';
 
 var d1;
 var d2;
