@@ -58,32 +58,38 @@ where `d1` is the numerator degrees of freedom, `d2` is the denominator degrees 
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-dists-f-cdf
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var cdf = require( '@stdlib/stats-base-dists-f-cdf' );
+cdf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var cdf = require( 'path/to/vendor/umd/stats-base-dists-f-cdf/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.cdf;
+})();
+</script>
 ```
 
 #### cdf( x, d1, d2 )
@@ -164,10 +170,15 @@ y = mycdf( 8.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var uniform = require( '@stdlib/random-array-uniform' );
-var logEachMap = require( '@stdlib/console-log-each-map' );
-var cdf = require( '@stdlib/stats-base-dists-f-cdf' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-f-cdf@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var opts = {
     'dtype': 'float64'
@@ -177,6 +188,11 @@ var d1 = uniform( 10, 0.0, 10.0, opts );
 var d2 = uniform( 10, 0.0, 10.0, opts );
 
 logEachMap( 'x: %0.4f, d1: %0.4f, d2: %0.4f, F(x;d1,d2): %0.4f', x, d1, d2, cdf );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -267,7 +283,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [f-distribution]: https://en.wikipedia.org/wiki/F_distribution
 
-[@stdlib/math/base/special/betainc]: https://github.com/stdlib-js/math-base-special-betainc
+[@stdlib/math/base/special/betainc]: https://github.com/stdlib-js/math-base-special-betainc/tree/umd
 
 </section>
 
