@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-21)
+## Unreleased (2026-09-22)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`83cb26e`](https://github.com/stdlib-js/stdlib/commit/83cb26e52898c9f6cd9701544a72abc31db8b75e) - **test:** migrate `stats/base/dists/f/cdf` to ULP-based testing [(#15405)](https://github.com/stdlib-js/stdlib/pull/15405) _(by Divyanshu)_
 -   [`a76fdd9`](https://github.com/stdlib-js/stdlib/commit/a76fdd9159a85d9e63982dce2c3a87861d1bf662) - **bench:** update random value generation for `stats/base/dists/f` [(#10238)](https://github.com/stdlib-js/stdlib/pull/10238) _(by Lokesh Ranjan, Philipp Burckhardt)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Divyanshu
 -   Lokesh Ranjan
 -   Philipp Burckhardt
 
