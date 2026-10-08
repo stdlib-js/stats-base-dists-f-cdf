@@ -4,7 +4,29 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-22)
+## Unreleased (2026-10-08)
+
+<section class="features">
+
+### Features
+
+-   [`16cbdd1`](https://github.com/stdlib-js/stdlib/commit/16cbdd1b583a02b71073d54b0be447865ab3d92e) - add C implementation for `stats/base/dists/f/cdf` [(#14692)](https://github.com/stdlib-js/stdlib/pull/14692)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3594](https://github.com/stdlib-js/stdlib/issues/3594)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +34,7 @@
 
 <details>
 
+-   [`16cbdd1`](https://github.com/stdlib-js/stdlib/commit/16cbdd1b583a02b71073d54b0be447865ab3d92e) - **feat:** add C implementation for `stats/base/dists/f/cdf` [(#14692)](https://github.com/stdlib-js/stdlib/pull/14692) _(by Philipp Burckhardt, Karan Anand)_
 -   [`83cb26e`](https://github.com/stdlib-js/stdlib/commit/83cb26e52898c9f6cd9701544a72abc31db8b75e) - **test:** migrate `stats/base/dists/f/cdf` to ULP-based testing [(#15405)](https://github.com/stdlib-js/stdlib/pull/15405) _(by Divyanshu)_
 -   [`a76fdd9`](https://github.com/stdlib-js/stdlib/commit/a76fdd9159a85d9e63982dce2c3a87861d1bf662) - **bench:** update random value generation for `stats/base/dists/f` [(#10238)](https://github.com/stdlib-js/stdlib/pull/10238) _(by Lokesh Ranjan, Philipp Burckhardt)_
 
@@ -25,9 +48,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Divyanshu
+-   Karan Anand
 -   Lokesh Ranjan
 -   Philipp Burckhardt
 
